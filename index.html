@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="E-Portfolio of Marissa Altenburg, M.A., CCSP" />
+  <title>Marissa Altenburg, M.A., CCSP | E-Portfolio</title>
+  <style>
+    :root {
+      --dark-color: #8A4A3A;
+      --pink-accent: #F8C9D0;
+      --black: #111;
+      --white: #fff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--black);
+      background-color: var(--white);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    /* HEADER / BANNER */
+    .site-header {
+      background-color: var(--dark-color);
+      background-image: url('banner.jpg'); /* ensure file is in same folder */
+      background-size: cover;
+      background-position: center;
+      min-height: 50vh;
+      max-height: 600px;
+    }
+
+    /* TABS */
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--pink-accent);
+    }
+
+    .tab {
+      padding: 0.8rem 1.5rem;
+      cursor: pointer;
+      background: var(--pink-accent);
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      margin-right: 0.5rem;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .tab.active {
+      background: var(--dark-color);
+      color: var(--white);
+    }
+
+    .tab:hover:not(.active) {
+      background: #dcaab3;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 1.5rem;
+      border: 1px solid var(--pink-accent);
+      border-top: none;
+      border-radius: 0 0 1rem 1rem;
+      background: var(--pink-accent);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h2 {
+      font-weight: 700;
+      color: var(--dark-color);
+      margin-top: 0;
+    }
+
+    p {
+      color: #222;
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--dark-color);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.7rem 1.2rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background: var(--black);
+      transform: translateY(-2px);
+    }
+
+    .site-footer {
+      background: var(--dark-color);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      margin-top: 3rem;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER / BANNER -->
+  <header class="site-header"></header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- TABS -->
+    <div class="tabs">
+      <div class="tab active" data-tab="about">About Me</div>
+      <div class="tab" data-tab="dragndrop">DragNDrop Quiz</div>
+      <div class="tab" data-tab="networking">Networking Quiz</div>
+      <div class="tab" data-tab="gator">Gator Network Video</div>
+    </div>
+
+    <!-- TAB CONTENT -->
+    <div id="about" class="tab-content active">
+      <h2>About Me</h2>
+      <p>Welcome to my e-portfolio! I’m a first-gen professional who found my path through higher education, and now I help others do the same. With 5+ years of experience in career services and ed tech, I design tools, trainings, and strategies that make career development more accessible, engaging, and impactful. I’m currently completing the UF Graduate Certification in Instructional Design (expected August 2026) to strengthen my ability to create effective, learner-centered experiences.</p>
+
+      <p>At the University of Florida, I work in the Career Connections Center as a Career Data, Technology, and Engagement Strategist. I lead cross-campus projects that combine data, UX, and scalable technology to support students, alumni, and staff. Whether it’s launching a new platform, building a content strategy, or leading a team through change, I bring curiosity, creativity, and a deep belief in the power of education to change lives.</p>
+
+      <p>I’m passionate about designing user-friendly experiences, telling meaningful stories with data, making career development more inclusive, and building systems that help people thrive. If you’re into tech-powered learning, thoughtful strategy, and student success, we’ll get along great.</p>
+    </div>
+
+    <div id="dragndrop" class="tab-content">
+      <h2>DragNDrop Quiz</h2>
+      <p>I redesigned a drag-and-drop quiz to match skills with the six Holland Career Types, creating a more interactive and accessible learning tool. I updated content, added emoji feedback and a progress bar, and improved layout, accessibility, and visual design using HTML, CSS, and JavaScript.</p>
+      <a href="https://marissaaltenburg.github.io/dragndrop/" target="_blank" class="button">View Project</a>
+    </div>
+
+    <div id="networking" class="tab-content">
+      <h2>Networking Quiz</h2>
+      <p>I built a professional networking quiz designed to be engaging, accessible, and user-friendly. I created the questions, answers, and career tips, then rebuilt the outdated code using semantic HTML, CSS, and organized JavaScript to modernize navigation and feedback.</p>
+      <a href="https://marissaaltenburg.github.io/quiz/" target="_blank" class="button">View Project</a>
+    </div>
+
+    <div id="gator" class="tab-content">
+      <h2>Gator Network Video</h2>
+      <p>I created an educational and engaging video to promote the Gator Network platform and make networking approachable for students. I wrote the script, storyboarded visuals, incorporated screen recordings and stock footage, and added narration, captions, and motion effects to enhance accessibility and user experience.</p>
+      <a href="https://youtu.be/xVawLMZcKWo" target="_blank" class="button">View Project</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 Marissa Altenburg. Built with accessibility, creativity, and strategy.</p>
+  </footer>
+
+  <!-- JS for tabs -->
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active classes
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        // Add active classes to selected tab and content
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
