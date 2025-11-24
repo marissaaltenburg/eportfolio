@@ -28,5 +28,19 @@
         <iframe src="https://www.youtube.com/embed/eaTWUY2kRxo?si=l04zZqh9_7TiwCs2" allowfullscreen></iframe>
         <p>I created a 2.5-minute AI screencast (see your sample video) that walks through the core features and value of Pictory AI, a tool that turns text into polished, educational video content. The video highlights its automatic video creation, script to video workflow, media editing, and captioning capabilities. I scripted the narration to clearly explain how Pictory works, then recorded a voiceover and paired it with visual callouts to guide viewers through each feature. Using Pictory’s editor, I incorporated a cohesive color palette, on-screen text, and transitions to make the concepts easy to follow. The final product demonstrates how educators can leverage Pictory AI to transform written lessons or scripts into engaging, accessible videos, with visuals, voiceovers, and captions all generated intelligently.</p>
     </section>
+ <script>
+  // Adjust the path for pages in subfolders
+  const pathToNav = window.location.pathname.includes('/') && !window.location.pathname.endsWith('index.html') 
+                    ? '../nav.html' 
+                    : 'nav.html';
+
+  fetch(pathToNav)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>
+
+
 </body>
 </html>
