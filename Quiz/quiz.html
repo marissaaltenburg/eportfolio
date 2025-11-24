@@ -6,15 +6,57 @@
 <title>Quiz Project - Marissa Altenburg</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&family=Poppins:wght@700&display=swap" rel="stylesheet">
 <style>
-body { font-family: 'Lato', sans-serif; margin: 0; background-color: #fafafa; color: #4b4b4b; }
-header { background-color: #f7c8d0; padding: 20px; text-align: center; }
-header h1 { font-family: 'Poppins', sans-serif; font-weight: 700; color: #3a4e55; }
-nav { background-color: #3a4e55; display: flex; justify-content: center; flex-wrap: wrap; }
-nav a { color: #fafafa; padding: 15px 20px; text-decoration: none; font-family: 'Poppins', sans-serif; font-weight: bold; }
-nav a:hover { background-color: #f76c6c; }
-.content { max-width: 900px; margin: auto; padding: 40px; font-size: 1.1rem; }
-.content embed { width: 100%; height: 500px; margin-top: 20px; border-radius: 8px; border: none; }
-h2 { font-family: 'Poppins', sans-serif; font-weight: 700; color: #3a4e55; margin-top: 30px; }
+body { 
+    font-family: 'Lato', sans-serif; 
+    margin: 0; 
+    background-color: #fafafa; 
+    color: #4b4b4b; 
+}
+header { 
+    background-color: #f7c8d0; 
+    padding: 20px; 
+    text-align: center; 
+}
+header h1 { 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700; 
+    color: #3a4e55; 
+}
+nav { 
+    background-color: #3a4e55; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+nav a { 
+    color: #fafafa; 
+    padding: 15px 20px; 
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold; 
+}
+nav a:hover { 
+    background-color: #f76c6c; 
+}
+.content { 
+    max-width: 900px; 
+    margin: auto; 
+    padding: 40px; 
+    font-size: 1.1rem; 
+}
+.content iframe { 
+    width: 100%; 
+    height: 600px; /* Adjusted height for quiz */
+    margin-top: 20px; 
+    border-radius: 8px; 
+    border: none; 
+}
+h2 { 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700; 
+    color: #3a4e55; 
+    margin-top: 30px; 
+}
 </style>
 </head>
 <body>
@@ -23,24 +65,21 @@ h2 { font-family: 'Poppins', sans-serif; font-weight: 700; color: #3a4e55; margi
 </header>
 
 <nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="../AIScreencast/ai-screencast.html">AI Screencast</a></li>
-    <li><a href="../Animation/animation.html">Animation</a></li>
-    <li><a href="../DigitalBookCover/digital-book-cover.html">Digital Book Cover</a></li>
-    <li><a href="../DragNDrop/dragndrop.html">Drag & Drop</a></li>
-    <li><a href="../EducationalVideo/educational-video.html">Educational Video</a></li>
-    <li><a href="../Logo/logo.html">Logo</a></li>
-    <li><a href="../Quiz/quiz.html">Quiz</a></li>
-    <li><a href="../Screencast/screencast.html">Screencast</a></li>
-  </ul>
+    <a href="../index.html">Home</a>
+    <a href="../About/about.html">About</a>
+    <a href="../AIScreencast/ai-screencast.html">AI Screencast</a>
+    <a href="../Animation/animation.html">Animation</a>
+    <a href="../DigitalBookCover/digital-book-cover.html">Digital Book Cover</a>
+    <a href="../DragNDrop/dragndrop.html">Drag & Drop</a>
+    <a href="../EducationalVideo/educational-video.html">Educational Video</a>
+    <a href="../Logo/logo.html">Logo</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="../Screencast/screencast.html">Screencast</a>
 </nav>
-
 
 <section class="content">
     <h2>Project Overview</h2>
-    <embed src="quiz.html">
+    <iframe src="https://marissaaltenburg.github.io/quiz/" allowfullscreen></iframe>
     <p>
         I created a professional networking quiz combining multiple choice and true/false questions with immediate feedback and quick tips. I refactored outdated HTML and JavaScript into a modern, accessible design using divs, CSS, and improved UI.
     </p>
@@ -50,3 +89,4 @@ h2 { font-family: 'Poppins', sans-serif; font-weight: 700; color: #3a4e55; margi
 </section>
 </body>
 </html>
+
