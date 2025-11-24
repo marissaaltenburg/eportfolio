@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Marissa Altenburg E-Portfolio</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marissa Altenburg - E-Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Lato', sans-serif; margin: 0; background-color: #fafafa; color: #4b4b4b; }
+header { background-color: #f7c8d0; padding: 50px 20px; text-align: center; }
+header h1 { font-family: 'Poppins', sans-serif; font-size: 2.4rem; color: #3a4e55; margin-bottom: 10px; }
+header p { max-width: 900px; margin: 0 auto; font-size: 1.15rem; line-height: 1.7; }
+
+nav { background-color: #3a4e55; display: flex; flex-wrap: wrap; justify-content: center; }
+nav a { color: #fafafa; padding: 15px 20px; text-decoration: none; font-family: 'Poppins', sans-serif; font-weight: bold; }
+nav a:hover { background-color: #f76c6c; }
+
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+h2 { font-family: 'Poppins', sans-serif; font-size: 1.8rem; color: #3a4e55; text-align: center; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
+.card { background-color: white; border-radius: 12px; padding: 25px; box-shadow: 0px 4px 10px rgba(0,0,0,0.07); transition: 0.3s ease; border-left: 8px solid #f7c8d0; }
+.card:hover { transform: translateY(-6px); box-shadow: 0px 6px 14px rgba(0,0,0,0.12); border-left: 8px solid #f76c6c; }
+.card h3 { font-family: 'Poppins', sans-serif; color: #3a4e55; font-size: 1.3rem; margin-bottom: 10px; }
+.card p { font-size: 0.95rem; margin-bottom: 15px; }
+.card a { font-family: 'Poppins', sans-serif; text-decoration: none; color: #f76c6c; font-weight: bold; }
+.card a:hover { text-decoration: underline; }
+.card img { max-width: 100%; border-radius: 8px; margin-bottom: 10px; }
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Marissa Altenburg E-Portfolio</h1>
+    <h1>Welcome to My E-Portfolio</h1>
+    <p>
+        Welcome to my e-portfolio! My name is <strong>Marissa Altenburg</strong>, and I’m a higher education career services professional.
+        I’m currently earning my Graduate Certificate in Instructional Design at the University of Florida to deepen my expertise in learner-centered experiences.
+        Explore my projects to see how I combine technology, data, and strategy to make career development more accessible, engaging, and impactful.
+    </p>
 </header>
 
 <nav>
   <ul>
-    <li><a href="AIScreencast/ai-screencast.html">AI Screencast</a></li>
     <li><a href="About/about.html">About</a></li>
+    <li><a href="AIScreencast/ai-screencast.html">AI Screencast</a></li>
     <li><a href="Animation/animation.html">Animation</a></li>
     <li><a href="DigitalBookCover/digital-book-cover.html">Digital Book Cover</a></li>
     <li><a href="DragNDrop/dragndrop.html">Drag & Drop</a></li>
@@ -27,18 +57,62 @@
 </nav>
 
 
-<section id="intro">
-    <div class="intro">
-        <h2>Welcome!</h2>
-        <p>Welcome to my e-portfolio, I am glad you are here! My name is Marissa Altenburg, and I’m a higher education career services professional with over 5 years of experience helping students and alumni navigate their career journeys. I’m currently earning my Graduate Certificate in Instructional Design at the University of Florida to deepen my expertise in creating learner-centered experiences.</p>
-        <p>Explore my projects to see how I combine technology, data, and strategy to make career development more accessible, engaging, and impactful. Thanks for stopping by, I hope you enjoy learning more about my work and passion for student success!</p>
-    </div>
-</section>
+<div class="container">
+    <h2>Browse My Projects</h2>
+    <div class="grid">
 
-<footer>
-    <p>&copy; 2025 Marissa Altenburg</p>
-</footer>
+        <div class="card">
+            <h3>AI Screencast</h3>
+            <p>A guided walkthrough demonstrating Pictory AI and its educational applications.</p>
+            <a href="AIScreencast/ai-screencast.html">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Animation Project</h3>
+            <p>An animated explanation of Applicant Tracking Systems (ATS) using Canva.</p>
+            <a href="Animation/animation.html">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Digital Book Cover</h3>
+            <img src="DigitalBookCover/DigitalBookCover.jpg" alt="Digital Book Cover">
+            <p>A Photoshop-based design blending imagery, color, and storytelling.</p>
+            <a href="DigitalBookCover/digital-book-cover.html">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Drag-and-Drop Quiz</h3>
+            <p>A refactored, accessible professional networking quiz built with HTML/CSS/JS.</p>
+            <a href="DragNDrop/dragndrop.html">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Educational Video</h3>
+            <p>A polished video promoting networking through the Gator Network platform.</p>
+            <a href="EducationalVideo/educational-video.html">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Logo Design</h3>
+            <img src="Logo/Logo.jpg" alt="Logo Design">
+            <p>A conceptual ed-tech logo representing growth, future-readiness, and innovation.</p>
+            <a href="Logo/logo.html">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Quiz Project</h3>
+            <p>A modernized, fully interactive networking quiz with updated UI & logic.</p>
+            <a href="Quiz/quiz.html">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Screencast</h3>
+            <p>A narrated Camtasia tutorial teaching résumé alignment techniques in Word.</p>
+            <a href="Screencast/screencast.html">View Project →</a>
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>
-
